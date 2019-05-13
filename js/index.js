@@ -59,7 +59,12 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 //Header
 const nav = document.querySelectorAll("nav");
 const navItems = document.querySelectorAll("nav a");
+//adding 2 nav elements
 const newNavItem = document.createElement("a");
+const newNavItem2 = document.createElement("a");
+document.querySelector("header nav").appendChild(newNavItem);
+document.querySelector("header nav").appendChild(newNavItem2);
+
 //CTA
 const ctaTxt = document.querySelectorAll(".cta-text h1");
 const ctaButton = document.querySelectorAll(".cta-text button");
@@ -90,16 +95,14 @@ navItems[2].innerText = siteContent["nav"]["nav-item-3"];
 navItems[3].innerText = siteContent["nav"]["nav-item-4"];
 navItems[4].innerText = siteContent["nav"]["nav-item-5"];
 navItems[5].innerText = siteContent["nav"]["nav-item-6"];
+// navItems[6].innerText = siteContent["nav"]["nav-item-7"];
+// navItems[7].innerText = siteContent["nav"]["nav-item-8"];
 navItems[0].style.color = "green";
 navItems[1].style.color = "green";
 navItems[2].style.color = "green";
 navItems[3].style.color = "green";
 navItems[4].style.color = "green";
 navItems[5].style.color = "green";
-document.querySelector("header nav").appendChild(newNavItem);
-document.querySelector("header nav").appendChild(newNavItem);
-navItems[6].innerText = siteContent["nav"]["nav-item-7"];
-navItems[7].innerText = siteContent["nav"]["nav-item-8"];
 
 //CTA
 ctaTxt[0].innerText = siteContent["cta"]["h1"];
